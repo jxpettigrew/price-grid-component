@@ -1,0 +1,123 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --desaturated-cyan: hsl(179, 47%, 52%);
+    --yellow-green: hsl(71, 73%, 54%);
+    --light-blue-gray: hsl(204, 43%, 93%);
+    --blue-gray: hsl(218, 22%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+    margin-left: -40px;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+/* li {
+    line-height: 15px;
+} */
+
+h1 {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.background {
+    background-color: var(--light-blue-gray);
+    height: 800px;
+    width: 1440px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 475px;
+    width: 635px;
+    /* border: 2px solid black; */
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.top-container {
+    /* width: 100%; */
+    /* margin-bottom: -15px; */
+    /* border: 1px solid red; */
+    height: 220px;
+}
+
+.bottom-container {
+    /* width: 100%; */
+    /* margin-top: -15px; */
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid orange; */
+    height: 255px;
+}
+
+.join-section {
+    background-color: var(--white);
+    color: var(--blue-gray);
+    height: 100%;
+    padding: 40px 40px;
+    margin-top: -21px;
+}
+
+.join-section p {
+    line-height: 12px;
+}
+
+.join-section h1 {
+    color: var(--cyan);
+}
+
+.join-section h2 {
+    color: var(--yellow-green);
+    padding-bottom: 5px;
+}
+
+.sub-price-section,
+.why-section {
+    padding: 20px 40px;
+}
+
+.sub-price-section {
+    background-color: var(--cyan);
+    width: 50%;
+    height: 100%;
+}
+
+.sub-price-section p {
+    line-height: 5px;
+}
+
+.why-section {
+    background-color: var(--desaturated-cyan);
+    width: 50%;
+    height: 100%;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.monthly {}
