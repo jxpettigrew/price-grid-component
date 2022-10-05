@@ -5,6 +5,8 @@
     --light-blue-gray: hsl(204, 43%, 93%);
     --blue-gray: hsl(218, 22%, 67%);
     --white: hsl(0, 0%, 100%);
+    --dark-shadow: hsla(240, 14%, 44%, 0.25);
+    --light-shadow: hsla(0, 0%, 42%, 0.3);
 }
 
 body {
@@ -19,11 +21,21 @@ ul {
     margin-left: -40px;
     line-height: 21px;
     font-size: 14px;
+    color: var(--light-blue-gray);
 }
 
-/* li {
-    line-height: 15px;
-} */
+footer {
+    height: 0;
+    color: var(--blue-gray);
+}
+
+footer a {
+    color: var(--cyan);
+}
+
+footer a:visited {
+    color: var(--yellow-green);
+}
 
 h1 {
     font-size: 22px;
@@ -48,27 +60,21 @@ h2 {
 .container {
     height: 475px;
     width: 635px;
-    /* border: 2px solid black; */
     border-radius: 7px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-shadow: var(--dark-shadow) 0px 13px 27px -5px, var(--light-shadow) 0px 8px 16px -8px;
 }
 
 .top-container {
-    /* width: 100%; */
-    /* margin-bottom: -15px; */
-    /* border: 1px solid red; */
     height: 220px;
 }
 
 .bottom-container {
-    /* width: 100%; */
-    /* margin-top: -15px; */
     display: flex;
     flex-direction: row;
-    /* border: 1px solid orange; */
     height: 255px;
 }
 
@@ -120,4 +126,20 @@ h2 {
     margin-right: 10px;
 }
 
-.monthly {}
+.monthly {
+    color: var(--light-blue-gray);
+}
+
+.sign-up-button {
+    background-color: var(--yellow-green);
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: var(--dark-shadow) 0px 13px 27px -5px, var(--light-shadow) 0px 8px 16px -8px;
+}
