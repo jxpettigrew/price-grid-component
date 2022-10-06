@@ -146,7 +146,12 @@ h2 {
     box-shadow: var(--dark-shadow) 0px 13px 27px -5px, var(--light-shadow) 0px 8px 16px -8px;
 }
 
-@media screen and (max-width: 500px) {
+.sign-up-button:hover {
+    background-color: var(--white);
+    color: var(--yellow-green);
+}
+
+@media screen and (max-width: 600px) {
     ul {
         font-size: 13px;
     }
@@ -215,7 +220,7 @@ h2 {
 
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 376px) {
     .background {
         margin: -10px;
     }
